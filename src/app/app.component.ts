@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RegisterService } from './register.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practica';
+  showRegisterComponent = true;
+
+  constructor(private registerService: RegisterService) {}
+
+  ngOnInit() {
+    this.registerService.getShowRegisterComponent().subscribe(value => {
+      this.showRegisterComponent = value;
+    });
+  }
 }
