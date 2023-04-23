@@ -45,7 +45,7 @@
                 <div class="-mx-3 md:flex mb-2">
                   <div class="md:w-1/2 px-3 mb-6 md:mb-0">
                     <label
-                      class="block  tracking-wide  font-bold mb-2"
+                      class="block tracking-wide font-bold mb-2"
                       for="grid-first-name"
                     >
                       Nombre de la actividad:
@@ -55,32 +55,32 @@
                       id="grid-first-name"
                       type="name"
                       placeholder="Ingresa el nombre de la actividad"
-                      
                     />
                   </div>
                   <div class="md:w-1/2 px-3">
                     <label
-                      class="block  tracking-wide font-bold mb-2"
+                      class="block tracking-wide font-bold mb-2"
                       for="start-date"
                     >
                       Fecha de inicio
                     </label>
                     <input
-                      class="appearance-none block w-full border border-black rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full border border-black rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 calendar"
                       id="start-date"
                       type="date"
-                      placeholder="Selecione la fecha de inicio"
+                      placeholder="Seleccione la fecha de inicio"
                     />
                     <span class="text-xs text-gray-600"
                       >Seleccione la fecha de inicio</span
                     >
                   </div>
                 </div>
+
                 <div class="-mx-3 md:flex mb-2">
                   <div class="md:w-1/2 px-3 mb-6 md:mb-0">
                     <label
                       for="grid-first-name"
-                      class="block  tracking-wide  font-bold mb-2"
+                      class="block tracking-wide font-bold mb-2"
                     >
                       Descripcion de actividad
                     </label>
@@ -92,7 +92,7 @@
                   </div>
                   <div class="md:w-1/2 px-3">
                     <label
-                      class="block  tracking-wide font-bold mb-2"
+                      class="block tracking-wide font-bold mb-2"
                       for="start-date"
                     >
                       Fecha de finalizacion
@@ -113,9 +113,9 @@
                     <label class="block">
                       <span class="font-bold">Categoria</span>
                       <select
-                        class="form-select mt-1 block w-60 border border-black py-2.5 rounded-md "
+                        class="form-select mt-1 block w-60 border border-black py-2.5 rounded-md"
                       >
-                        <option disabled selected value="" >
+                        <option disabled selected value="">
                           Seleccione la categoria
                         </option>
                         <option value="1" class="bg-[#FFE9A0]">Diseño</option>
@@ -128,7 +128,7 @@
                     <div class="flex flex-col md:flex-row">
                       <div class="md:w-1/2">
                         <label
-                          class="block  tracking-wide text-base font-bold mb-2"
+                          class="block tracking-wide text-base font-bold mb-2"
                           for="start-time"
                         >
                           Hora de inicio:
@@ -142,7 +142,7 @@
                       </div>
                       <div class="md:w-1/2 md:mt-0 md:ml-3">
                         <label
-                          class="block  tracking-wide  font-bold mb-2"
+                          class="block tracking-wide font-bold mb-2"
                           for="end-time"
                         >
                           Hora de finalización:
@@ -158,7 +158,7 @@
                   </div>
                 </div>
               </div>
-             <!--  <div>
+              <!--  <div>
                 <div class="justify-end flex font-semibold">
                   <button class="bg-gray-200 py-1.5 px-2 rounded-md mx-5">
                     Cancelar
@@ -174,7 +174,10 @@
             </form>
             <div class="flex pb-6 justify-end">
               <div class="justify-end flex font-semibold">
-                <button class="bg-gray-200 py-1.5 px-2 rounded-md mx-5" (click)="hideModal()">
+                <button
+                  class="bg-gray-200 py-1.5 px-2 rounded-md mx-5"
+                  (click)="hideModal()"
+                >
                   Cancelar
                 </button>
                 <button
